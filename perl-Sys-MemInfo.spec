@@ -4,7 +4,7 @@
 #
 Name     : perl-Sys-MemInfo
 Version  : 0.99
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/S/SC/SCRESTO/Sys-MemInfo-0.99.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SC/SCRESTO/Sys-MemInfo-0.99.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libs/libsys-meminfo-perl/libsys-meminfo-perl_0.99-1.debian.tar.xz
