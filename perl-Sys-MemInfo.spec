@@ -4,7 +4,7 @@
 #
 Name     : perl-Sys-MemInfo
 Version  : 0.99
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/S/SC/SCRESTO/Sys-MemInfo-0.99.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SC/SCRESTO/Sys-MemInfo-0.99.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libs/libsys-meminfo-perl/libsys-meminfo-perl_0.99-1.debian.tar.xz
@@ -80,7 +80,7 @@ make TEST_VERBOSE=1 test
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Sys-MemInfo
 cp %{_builddir}/Sys-MemInfo-0.99/LICENSE %{buildroot}/usr/share/package-licenses/perl-Sys-MemInfo/a3e8f8a3dd3eb197246feadbf92cab49deaa3bd9
-cp %{_builddir}/Sys-MemInfo-0.99/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-Sys-MemInfo/c4d9da02531b248cd3265fff9f43d606e9a4ffe2
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Sys-MemInfo/c4d9da02531b248cd3265fff9f43d606e9a4ffe2
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -105,5 +105,5 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Sys/MemInfo.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Sys/MemInfo/MemInfo.so
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Sys/MemInfo.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/auto/Sys/MemInfo/MemInfo.so
