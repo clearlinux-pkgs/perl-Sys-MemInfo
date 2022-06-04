@@ -4,7 +4,7 @@
 #
 Name     : perl-Sys-MemInfo
 Version  : 0.99
-Release  : 20
+Release  : 21
 URL      : https://cpan.metacpan.org/authors/id/S/SC/SCRESTO/Sys-MemInfo-0.99.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SC/SCRESTO/Sys-MemInfo-0.99.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libs/libsys-meminfo-perl/libsys-meminfo-perl_0.99-1.debian.tar.xz
@@ -105,5 +105,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/Sys/MemInfo.pm
-/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/auto/Sys/MemInfo/MemInfo.so
+/usr/lib/perl5/*
